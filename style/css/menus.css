@@ -1,0 +1,276 @@
+@charset "UTF-8";
+/* Général */
+* {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 28px;
+  font-family: "Shrikhand"; }
+
+h2 {
+  font-size: 26px;
+  font-family: "Shrikhand";
+  padding-top: 20px;
+  padding-bottom: 30px;
+  width: 100%; }
+
+h3 {
+  font-size: 19px;
+  padding-bottom: 4px;
+  font-weight: 300;
+  font-family: "Roboto"; }
+
+h4 {
+  font-size: 17px;
+  font-family: "Roboto";
+  padding: 5px 0 0 10px;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+p {
+  font-size: 15px;
+  font-family: "Roboto";
+  padding-left: 10px;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+  h4 {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; } }
+@media screen and (min-width: 1400px) {
+  p {
+    text-overflow: none;
+    overflow: visible;
+    white-space: none; } }
+button {
+  background: #9356dc;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  border: none;
+  border-radius: 30px;
+  box-shadow: 4px 4px 10px #dfdfdf;
+  height: 50px;
+  color: #FFF;
+  font-size: 18px; }
+
+button:hover {
+  background: #9f70d7;
+  background: linear-gradient(360deg, #9f70d7 0%, #ff9ce4 100%);
+  box-shadow: 4px 4px 10px #dfdfdf; }
+
+/* Footer */
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 25px; }
+  footer .logo-footer {
+    width: 110px;
+    margin: 0 0 16px; }
+
+ul {
+  list-style-type: none; }
+
+li > a {
+  color: #FFF;
+  font-family: "Roboto"; }
+  li > a .fa-utensils {
+    margin-right: 8px; }
+  li > a .fa-handshake-angle {
+    margin-right: 2px; }
+
+.item1 {
+  margin-bottom: 8px; }
+
+.item2 {
+  margin: 8px 0; }
+
+.item3 {
+  margin-top: 8px; }
+
+/* Header */
+header {
+  padding: 16px 16px 5px 16px; }
+  header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+  header .lien-accueil {
+    position: relative;
+    z-index: 1; }
+  header i.fa-arrow-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    position: absolute; }
+
+/* Carte restaurant */
+.img-carte {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  position: relative; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.carte {
+  display: flex;
+  background-color: #f6f6f6;
+  border-radius: 32px 32px 0 0;
+  padding: 16px 0 32px 0;
+  position: absolute;
+  width: 100%;
+  top: 264px; }
+  .carte .title-restaurant {
+    padding: 16px 32px 0 16px; }
+
+/* Animation coeur */
+.position-heart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 20px; }
+
+.margin-bottom {
+  margin-bottom: 40px; }
+
+.fa-heart {
+  font-size: x-large;
+  padding-bottom: 5px;
+  color: #3C4948; }
+
+.checkbox {
+  display: none; }
+
+.checked {
+  display: none;
+  transform: scale(0);
+  background: -webkit-linear-gradient(270deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.checkbox:checked ~ .checked {
+  transform: scale(1);
+  transition-duration: .5s;
+  display: inline-block;
+  padding-right: 24px; }
+
+.checkbox:checked ~ .unchecked {
+  display: none; }
+
+/* Menu */
+.background-carte {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column; }
+  .background-carte .sous-menu {
+    max-width: 100%;
+    padding: 0 16px;
+    overflow: hidden; }
+  .background-carte .trait {
+    width: 48px;
+    height: 4px;
+    background-color: #99E2D0;
+    border: none; }
+  .background-carte .padding-top {
+    padding-top: 25px; }
+
+.menu-item {
+  display: flex;
+  background-color: #FFF;
+  border-radius: 12px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  margin: 16px 0; }
+  .menu-item .prix-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-weight: 700;
+    padding-left: 8px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+    /*width: 100%;*/ }
+
+.menu-item {
+  -webkit-animation-duration: 2s; }
+
+@-webkit-keyframes glissement {
+  /* sur Safari et Chrome */
+  from {
+    margin-top: 100%;
+    opacity: 0; }
+  to {
+    margin-top: 0%;
+    opacity: 1; } }
+/* Icon validé */
+.item {
+  height: 60px;
+  width: 100vw;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden; }
+
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px; }
+
+.check {
+  background-color: #99E2D0;
+  width: 22%;
+  margin-right: -22%;
+  text-align: center;
+  transition: 0.5s; }
+
+i.fa-check-circle {
+  font-size: 30px;
+  color: white;
+  background-color: #99E2D0;
+  transition: transform .84s;
+  margin-top: 15px; }
+
+.info:hover ~ .check i {
+  transform: rotate(360deg); }
+
+.info:hover {
+  animation: fade .84s forwards; }
+
+@-webkit-keyframes fade {
+  from {
+    width: 100%; }
+  to {
+    width: 78%; } }
+/* Btn commander */
+.background-btn {
+  background-color: #f6f6f6;
+  padding: 48px 0;
+  display: flex;
+  justify-content: center; }
+  .background-btn .btn-commander {
+    width: 140px; }
+
+/* Fin de la version mobile */
+/* Début de la version Desktop */
+@media screen and (min-width: 1100px) {
+  /* Menus */
+  .background-carte {
+    flex-direction: row;
+    padding-top: 15px; }
+    .background-carte .padding-top-desktop {
+      padding-top: 25px; } }
+
+/*# sourceMappingURL=menus.css.map */

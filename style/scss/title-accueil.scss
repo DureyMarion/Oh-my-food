@@ -1,0 +1,42 @@
+$font-family-title: 'Shrikhand';
+$font-family-text: 'Roboto';
+$padding: 32px 25px;
+
+/* Général */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-size: 26px;
+    font-family: $font-family-text;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+h3{
+    font-size: 19px;
+    padding-bottom: 4px;
+    font-family: $font-family-text;
+}
+
+p{
+    font-size: 16px;
+    font-family: $font-family-text;
+}
+
+address{
+    font-size: 19px;
+    font-family: $font-family-text;
+}
+
+.step-number{
+    font-family: $font-family-text;
+    font-size: 12px;
+}
+
+.nouveau{
+    font-family: $font-family-text;
+    font-size: 14px;
+}

@@ -1,0 +1,68 @@
+$font-family-title: 'Shrikhand';
+$font-family-text: 'Roboto';
+$padding: 32px 25px;
+
+/* Général */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 28px;
+    font-family: $font-family-title;
+}
+
+h2{
+    font-size: 26px;
+    font-family: $font-family-title;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+h3{
+    font-size: 19px;
+    padding-bottom: 4px;
+    font-weight: 300;
+    font-family: $font-family-text;
+}
+
+h4{
+    font-size: 17px;
+    font-family: $font-family-text;
+    padding: 5px 0 0 10px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p{
+    font-size: 15px;
+    font-family: $font-family-text;
+    padding-left: 10px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+    h4{
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+
+}
+
+@media screen and (min-width: 1400px){
+    p{
+        text-overflow: none;
+        overflow: visible;
+        white-space: none;
+    }
+}
