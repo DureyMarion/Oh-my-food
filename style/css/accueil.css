@@ -39,7 +39,8 @@ button {
   box-shadow: 4px 4px 10px #dfdfdf;
   height: 50px;
   color: #FFF;
-  font-size: 18px; }
+  font-size: 18px;
+  width: 250px; }
 
 button:hover {
   background: #9f70d7;
