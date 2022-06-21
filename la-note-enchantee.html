@@ -21,7 +21,7 @@
 
     <header>
         <div>
-            <a class="lien-accueil" href="./accueil.html">
+            <a class="lien-accueil" href="./index.html">
                 <i class="fa-arrow-left fas"></i>
             </a>
             <h1>ohmyfood</h1>
@@ -42,14 +42,15 @@
                 <i class="fa-heart fas checked"></i>
             </label>
         </div>
+
         <div class="background-carte">
-            <section class="sous-menu">
+            <section class="sous-menu padding-top-desktop">
                 <h3>ENTRÉES</h3>
                 <hr class="trait" type='text/css'>
                     <article class="menu-item">
                         <div class="item">
                             <div class="info">
-                                <div>
+                                <div class="text">
                                     <h4>Raviole de foie gras</h4>
                                     <p>Accompagnés de leur crème à la truffe</p>
                                 </div>
@@ -99,13 +100,13 @@
                     </article>
             </section>
 
-            <section>
+            <section class="sous-menu padding-top">
                 <h3>PLATS</h3>
                 <hr class="trait" type='text/css'>
                     <article class="menu-item">
                         <div class="item">
                             <div class="info">
-                                <div>
+                                <div class="text">
                                     <h4>Noix de coquilles Saint-Jacques</h4>
                                     <p>Sur lit de purée de céleri-rave</p>
                                 </div>
@@ -114,6 +115,7 @@
                             <span class="check"><i class="fas fa-check-circle"></i></span>
                         </div>
                     </article>
+            
 
                     <article class="menu-item">
                         <div class="item">
@@ -142,7 +144,7 @@
                     </article>
             </section>
 
-            <section>
+            <section class="sous-menu padding-top">
                 <h3>DESSERTS</h3>
                 <hr class="trait" type='text/css'>
                     <article class="menu-item">
@@ -185,9 +187,15 @@
                     </article>
             </section>
         </div>
-        <div>
-            <button>Commander</button>
+        
+        <div class="background-btn">
+            <a href="#">
+            <button class="btn-commander">
+                <span>Commander</span>
+            </button>
+            <a>
         </div>
+
     </main>
 
     <footer>
@@ -209,10 +217,9 @@
                     </a>
                 </li>
                 <li class="item2"><a href="#">Mentions légales</a></li>
-                <li class="item3"><a href="#">Contact</a></li>
+                <li class="item3"><a href="mailto:ohmyfood@contact.fr">Contact</a></li>
             </ul>
         </div>
-
     </footer>
 
 </body>
