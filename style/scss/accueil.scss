@@ -53,6 +53,7 @@ $padding: 32px 25px;
     }
 }
 
+/* Animation du loader */
 @keyframes loader{
     to{
         opacity:0;
@@ -94,6 +95,7 @@ header {
 }
 
 /* Début Main */
+/* Lieu de recherche des restaurants gastronomiques*/
 .lieu {
     display: flex;
     justify-content: center;

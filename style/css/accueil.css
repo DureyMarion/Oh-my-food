@@ -125,6 +125,7 @@ li > a {
       background-color: #9356DC;
       animation-delay: 0.5s; }
 
+/* Animation du loader */
 @keyframes loader {
   to {
     opacity: 0;
@@ -149,6 +150,7 @@ header {
     width: 200px; }
 
 /* Début Main */
+/* Lieu de recherche des restaurants gastronomiques*/
 .lieu {
   display: flex;
   justify-content: center;
