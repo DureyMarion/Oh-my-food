@@ -1,23 +1,328 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - scss/accueil.scc
+@charset "UTF-8";
+/* Général */
+* {
+  margin: 0;
+  padding: 0; }
 
-Backtrace:
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `read'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - scss/accueil.scc"; }
+h2 {
+  font-size: 26px;
+  font-family: "Roboto";
+  padding-top: 20px;
+  padding-bottom: 5px; }
+
+h3 {
+  font-size: 19px;
+  padding-bottom: 4px;
+  font-family: "Roboto"; }
+
+p {
+  font-size: 16px;
+  font-family: "Roboto"; }
+
+address {
+  font-size: 19px;
+  font-family: "Roboto"; }
+
+.step-number {
+  font-family: "Roboto";
+  font-size: 12px; }
+
+.nouveau {
+  font-family: "Roboto";
+  font-size: 14px; }
+
+button {
+  background: #9356dc;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  border: none;
+  border-radius: 30px;
+  box-shadow: 4px 4px 10px #dfdfdf;
+  height: 50px;
+  color: #FFF;
+  font-size: 18px;
+  width: 250px; }
+
+button:hover {
+  background: #9f70d7;
+  background: linear-gradient(360deg, #9f70d7 0%, #ff9ce4 100%);
+  box-shadow: 4px 4px 10px #353535; }
+
+.taille2 {
+  background: #9356dc;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  border: none;
+  border-radius: 30px;
+  box-shadow: 4px 4px 10px #dfdfdf;
+  height: 50px;
+  color: #FFF;
+  font-size: 18px;
+  width: 150px; }
+
+.taille2:hover {
+  background: #9f70d7;
+  background: linear-gradient(360deg, #9f70d7 0%, #ff9ce4 100%);
+  box-shadow: 4px 4px 10px #353535; }
+
+/* Footer */
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 25px; }
+  footer .logo-footer {
+    width: 110px;
+    margin: 0 0 16px; }
+
+ul {
+  list-style-type: none; }
+
+li > a {
+  color: #FFF;
+  font-family: "Roboto"; }
+  li > a .fa-utensils {
+    margin-right: 8px; }
+  li > a .fa-handshake-angle {
+    margin-right: 2px; }
+
+.item1 {
+  margin-bottom: 8px; }
+
+.item2 {
+  margin: 8px 0; }
+
+.item3 {
+  margin-top: 8px; }
+
+/* Loader */
+.loader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: loader 0.01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .loader__item {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    animation: jump 1s;
+    animation-iteration-count: 1; }
+    .loader__itemContainer {
+      display: flex;
+      width: 80px;
+      justify-content: space-between; }
+    .loader__item--1 {
+      background-color: #9356DC; }
+    .loader__item--2 {
+      background-color: #9356DC;
+      animation-delay: 0.25s; }
+    .loader__item--3 {
+      background-color: #9356DC;
+      animation-delay: 0.5s; }
+
+@keyframes loader {
+  to {
+    opacity: 0;
+    z-index: -10; } }
+@keyframes jump {
+  0% {
+    transform: translateY(0); }
+  25% {
+    transform: translateY(8px); }
+  75% {
+    transform: translateY(-8px); }
+  to {
+    transform: translateY(0); } }
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  padding: 16px;
+  margin-bottom: 3px; }
+  header img {
+    width: 200px; }
+
+/* Début Main */
+.lieu {
+  display: flex;
+  justify-content: center;
+  background-color: #f3f3f3;
+  padding: 20px 16px;
+  font-size: 19px;
+  font-style: normal !important;
+  font-weight: 700; }
+  .lieu address {
+    font-style: normal;
+    font-weight: 400; }
+  .lieu .fa-map-marker-alt {
+    margin-right: 20px; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+/* Section de réservation */
+.reservation {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 32px 32px 45px 32px;
+  background-color: #fafafa; }
+  .reservation .subtitle-reservation {
+    margin-top: 11px;
+    margin-bottom: 24px;
+    font-weight: 300; }
+  .reservation a.btn-recherche {
+    color: white !important; }
+    .reservation a.btn-recherche .btn {
+      font-size: 18px;
+      padding: 12px 24px; }
+
+/* Section sur le fonctionnement */
+.fonctionnement {
+  padding: 32px 25px; }
+  .fonctionnement .container {
+    width: 100%;
+    display: flex;
+    text-align: left; }
+  .fonctionnement .title-fonction {
+    margin-top: 0; }
+  .fonctionnement .step-number {
+    background: #9356DC;
+    color: white;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -1px;
+    margin-top: 17px; }
+  .fonctionnement ol.etapes {
+    display: flex;
+    flex-direction: column;
+    counter-reset: filter;
+    position: relative; }
+  .fonctionnement .filter-button {
+    display: flex;
+    background-color: #f6f6f6;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
+    border-radius: 20px;
+    height: 60px;
+    margin: 16px 0 16px 12px; }
+  .fonctionnement .filter-button:hover {
+    background-color: #F3E9FA; }
+  .fonctionnement .filter-button:hover .fa-mobile-alt {
+    color: #9356DC; }
+  .fonctionnement .filter-button:hover .fa-list-ul {
+    color: #9356DC; }
+  .fonctionnement .filter-button:hover .fa-store {
+    color: #9356DC; }
+  .fonctionnement .filter-text {
+    margin-top: 20px;
+    font-family: "Roboto"; }
+  .fonctionnement i.fa-mobile-alt {
+    margin-right: 16px;
+    margin-top: 21px;
+    margin-left: 25px;
+    color: #7e7e7e; }
+  .fonctionnement i.fa-list-ul {
+    margin-right: 16px;
+    margin-top: 21px;
+    margin-left: 25px;
+    color: #7e7e7e; }
+  .fonctionnement i.fa-store {
+    margin-right: 16px;
+    margin-top: 21px;
+    margin-left: 25px;
+    color: #7e7e7e; }
+
+/* Section des cartes des restaurants */
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 32px 25px; }
+  .restaurants .menu-carte {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0; }
+  .restaurants .background-carte {
+    background-color: #FFF;
+    border-radius: 15px;
+    position: relative; }
+  .restaurants .img-menu {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0; }
+  .restaurants .nouveau {
+    background-color: #99E2D0;
+    color: #0C7B71;
+    border-radius: 2px;
+    position: absolute;
+    padding: 8px;
+    top: 16px;
+    right: 12px; }
+  .restaurants .description-menu {
+    display: flex;
+    align-items: center;
+    padding: 16px; }
+
+/* Animation coeur */
+.margin-bottom {
+  margin-bottom: 40px; }
+
+.fa-heart {
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+  position: absolute;
+  color: gray;
+  right: 30px; }
+
+.checkbox {
+  display: none; }
+
+.checked {
+  display: none;
+  transform: scale(0);
+  background: -webkit-linear-gradient(270deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.checkbox:checked ~ .checked {
+  transform: scale(1);
+  transition-duration: .5s;
+  display: inline-block; }
+
+.checkbox:checked ~ .unchecked {
+  display: none; }
+
+/* Fin du main */
+/* Aller voir le fichier footer.scss */
+/* Fin de la version mobile */
+/* Début de la version Desktop */
+@media screen and (min-width: 1100px) {
+  .menu-carte {
+    width: 50%;
+    margin: 10px; }
+
+  .restaurants-desktop {
+    display: flex;
+    justify-content: center; } }
+/* Version Tablette */
+@media screen and (min-width: 700px) {
+  .filter-button {
+    width: 100%;
+    margin: 16px 0 16px 30px; }
+
+  .etapes {
+    flex-direction: row; } }
+
+/*# sourceMappingURL=accueil.css.map */
