@@ -292,6 +292,7 @@ a {
 .fa-heart:hover {
   cursor: pointer; }
 
+/* Le coeur checkable */
 .checkbox {
   display: none; }
 
