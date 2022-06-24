@@ -274,7 +274,8 @@ a {
   .restaurants .description-menu {
     display: flex;
     align-items: center;
-    padding: 16px; }
+    padding: 16px;
+    cursor: pointer; }
   .restaurants .description-text {
     padding-right: 150px; }
 
