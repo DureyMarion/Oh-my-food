@@ -273,11 +273,11 @@ a {
     right: 12px; }
   .restaurants .description-menu {
     display: flex;
-    align-items: center;
-    padding: 16px;
-    cursor: pointer; }
-  .restaurants .description-text {
-    padding-right: 150px; }
+    align-items: center; }
+
+.width100 {
+  width: 100%;
+  padding: 16px; }
 
 /* Animation coeur */
 .margin-bottom {
